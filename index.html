@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,500;1,600;1,800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-center">
+        <div class="container-fluid">
+            <div class="logo d-flex align-items-center">
+                <a class="navbar-brand" href="#">A </a>
+                <span class="name-brand">ALVIN</span>
+            </div>
+          <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="https://github.com/Alvincf10" target="_blank"><i class="fa-brands fa-github medium"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/alvincf10/" target="_blank"><i class="fa-brands fa-linkedin medium"></i></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://wa.me/6281285922587" target="_blank"><i class="fa-brands fa-whatsapp medium"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="" data-telepon="081285922587" id="copy-link"><i class="fa-solid fa-phone"></i></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="profile row">
+            <div class="profile-image col-12 col-lg-6 col-md-6 col-sm-12">
+                <img src="image/profile.png" class="picture" width="50%">
+            </div>
+            <div class="profile-detail col-12 col-lg-6 col-md-6 col-sm-12">
+                <h5>HI THERE</h5>
+                <h1>I'm Alvin Junior Frontend Engineer Based in <br>Jakarta.</h1>
+                <ul class="experince">
+                    <li>
+                        <strong>2+</strong>
+                        <span>Experince</span>
+                    </li>
+                    <li>
+                        <strong>7+</strong>
+                        <span>Project</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about">
+            <section>
+                <div class="header">
+                    <h2 class="about-heading">About Me</h2>
+                    <p>I am a sociable person, easy to adapt to any situation, teamwork, creative, disciplined, and focused on the work I do and I can manage my time well, like looking for new things, and like looking for interesting experiences, especially in the field it.</p>
+                    <p>based on my experience as a frontend web developer I am very interested in always improving myself. and I am happy to work with the team to achieve the same goal.</p>
+                    <div class="button-resume text-center">
+                        <a class="btn-resume" href="https://github.com/Alvincf10/resume/blob/main/CV%20-%20ALVIN.pdf" target="_blank">DOWNLOAD RESUME</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="about">
+            <section>
+                <div class="header">
+                    <h2 class="about-heading">Skills</h2>
+                    
+                </div>
+            </section>
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js"></script>
+    <script>
+        document.getElementById('copy-link').addEventListener('click', function() {
+          var nomorTelepon = this.getAttribute('data-telepon');
+    
+          var tempInput = document.createElement('input');
+          tempInput.setAttribute('value', nomorTelepon);
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempInput);
+    
+          alert('Nomor telepon Berhasil disalin ke clipboard: ' + nomorTelepon);
+        });
+      </script>
+</body>
+</html>

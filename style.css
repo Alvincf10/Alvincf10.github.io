@@ -1,0 +1,118 @@
+body{
+    font-family: 'Nunito', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.p-center{
+    padding: 3em !important;
+    padding-left: 6.5em !important;
+    padding-right: 6.5em !important;
+}
+
+.medium{
+    font-size: 20px;
+}
+
+.name-brand{
+    letter-spacing: 4px;
+}
+
+
+.profile-image{
+    justify-content: center;
+    display: flex;
+}
+
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #6499E9;
+    border-radius: 4px;
+    color: #FFF !important;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.nav-item{
+    padding: 0.5em;
+}
+
+.nav-item a{
+    color: #6499E9;
+}
+
+.profile-detail{
+    max-width: 25rem !important;   
+}
+
+.experince{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.experince strong{
+    display: block;
+    color: #6499E9;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.experince li{
+    margin-right: 50px;
+    letter-spacing: 1px;
+}
+
+.about{
+    padding-top: 60px;
+}
+
+.about-heading{
+    display: inline-block;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-bottom: 3px dotted #6499E9;
+    padding-bottom: 7px;
+    margin-bottom: 23px;
+}
+
+.about p{
+    color: #191717;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.btn-resume{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: white;
+    background-color: #6499E9;
+    padding: 17px 30px;
+    border-radius: 60px;
+    text-decoration: none;
+}
+
+.btn-resume:hover{
+    color: #6499E9;
+    background-color: white;
+    border: 1px solid #6499E9;
+}
