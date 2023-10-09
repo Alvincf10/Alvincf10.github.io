@@ -3,12 +3,41 @@ body{
     font-family: 'Poppins', sans-serif !important;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .p-center{
     padding: 3em !important;
     padding-left: 6.5em !important;
     padding-right: 6.5em !important;
 }
 
+.navbar-custom{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    padding: 30px 0;
+    background-color: #FFF;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.fixed-navbar{
+    padding: 20px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .medium{
     font-size: 20px;
 }
@@ -23,8 +52,16 @@ body{
     display: flex;
 }
 
-
-.navbar-brand{
+.navbar-name{
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.navbar-name span{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +74,14 @@ body{
     font-weight: 600;
     text-align: center;
     margin-right: 12px;
+}
+
+.navbar-sosial{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
 }
 
 .nav-item{
@@ -97,7 +142,7 @@ body{
     text-align: justify;
 }
 
-.btn-resume{
+.btn-resume, .btn-project{
     display: inline-block;
     text-transform: uppercase;
     font-size: 12px;
@@ -112,6 +157,11 @@ body{
 }
 
 .btn-resume:hover{
+    color: #6499E9;
+    background-color: white;
+    border: 1px solid #6499E9;
+}
+.btn-project:hover{
     color: #6499E9;
     background-color: white;
     border: 1px solid #6499E9;
@@ -198,4 +248,26 @@ body{
     font-size: 18px;
     line-height: 30px;
     text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-custom{
+        padding: 15px 0;
+    }
+
+    .profile-detail h5{
+        margin: 20px 0 20px 0;
+    }
+    
+    .btn-project{
+        padding: 11px 10px;
+    }
+
+    .list-portfolio{
+        padding: 30px;
+    }
+
+    .list-portfolio section{
+        padding-bottom: 30px;
+    }
 }

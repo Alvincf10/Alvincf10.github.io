@@ -13,14 +13,11 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-center">
-        <div class="container-fluid">
-            <div class="logo d-flex align-items-center">
-                <a class="navbar-brand" href="#">A </a>
-                <span class="name-brand">ALVIN</span>
-            </div>
-          <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
-            <ul class="navbar-nav">
+    <header class="navbar-custom" id="site-header">
+        <div class="container">
+          <div class="header-inner" id="navbarNav">
+            <a class="navbar-name" href="#"><span>A</span>ALVIN </a>
+            <ul class="navbar-sosial">
               <li class="nav-item">
                 <a href="https://github.com/Alvincf10" target="_blank"><i class="fa-brands fa-github medium"></i></a>
               </li>
@@ -36,19 +33,19 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </header>
 
       <div class="container">
-        <div class="profile row">
+        <div class="profile row banner" style="margin-top: 200px;">
             <div class="profile-image col-12 col-lg-6 col-md-6 col-sm-12">
                 <img src="image/profile.png" class="picture" width="50%">
             </div>
             <div class="profile-detail col-12 col-lg-6 col-md-6 col-sm-12">
                 <h5>HI THERE</h5>
-                <h1>I'm Alvin Junior Frontend Engineer Based in <br>Jakarta.</h1>
+                <h1>I'm Alvin Junior Frontend Engineer Based in <br>Jakarta, Indonesia.</h1>
                 <ul class="experince">
                     <li>
-                        <strong>2+</strong>
+                        <strong>3+</strong>
                         <span>Experince</span>
                     </li>
                     <li>
@@ -175,12 +172,12 @@
                       <section>
                         <h3 class="title-name-port">Pesat</h3>
                         <p class="description-port">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias, praesentium repellendus dignissimos perspiciatis doloremque! Sed quas libero voluptas ducimus deleniti doloremque aliquid cum architecto expedita. Voluptatibus quasi nam ipsam.</p>
-                        <a href="https://pesat.online/" target="_blank" class="btn-resume">See Project</a>
+                        <a href="https://pesat.online/" target="_blank" class="btn-project">See Project</a>
                       </section>
                     </div>
                     <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
                       <figure class="d-flex align-items-center justify-content-center">
-                        <img class="logo-img" src="image/porto-1.png" width="100%">
+                        <img class="logo-img" src="image/porto-1.png">
                       </figure>
                     </div>
                   </div>
@@ -192,6 +189,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js"></script>
     <script>
         document.getElementById('copy-link').addEventListener('click', function() {

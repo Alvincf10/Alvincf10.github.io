@@ -11,3 +11,19 @@ popupTrigger.addEventListener("click", () => {
 popupCloseButton.addEventListener("click", () => {
     popup.style.display = "none";
 });
+
+jQuery(document).ready(function ($) {
+    var mastheadheight = $(".navbar-custom").outerHeight();
+    //console.log(mastheadheight);
+    $(".banner,.ds-main-section").css("margin-top", mastheadheight);
+  
+    $(window)
+      .scroll(function () {
+        if ($(window).scrollTop() >= 10) {
+          $(".navbar-custom").addClass("fixed-navbar");
+        } else {
+          $(".navbar-custom").removeClass("fixed-navbar");
+        }
+      })
+      .scroll();
+  });
